@@ -1,0 +1,40 @@
+CREATE VIEW `film_information` AS
+SELECT 
+	f.film_id 'Film id',
+	f.title 'Film title',
+    f.description 'description',
+    f.durability 'Durability',
+    f.producer 'Producer',
+	f.year 'year',
+    (SELECT country.country_name FROM country where country.country_id = f.Country_country_id) 'Production',
+	GROUP_CONCAT(DISTINCT d.title ORDER BY c.Category_category_id ASC SEPARATOR ', ') AS Genres
+FROM 
+	film f,
+    category d
+LEFT JOIN 
+	film_has_a_category c 
+    ON 
+    d.category_id = c.Category_category_id
+WHERE 
+	f.film_id = c.Film_film_id
+GROUP BY 
+	f.film_id;
+	
+	
+	
+	SELECT 
+    (SELECT user.login FROM user where user.user_id = f.User_user_id) 'User',
+    (SELECT film.title FROM film, session where film.film_id = session.Film_film_id and session.session_id = f.Session_session_id) 'Film',
+	(SELECT session.date FROM session where session.session_id = f.Session_session_id) 'Date',
+	GROUP_CONCAT(DISTINCT d.place_id ORDER BY c.Place_place_id ASC SEPARATOR ', ') AS Places
+FROM 
+	`order` f,
+    place d
+LEFT JOIN 
+	order_has_a_place c 
+    ON 
+    d.place_id = c.Place_place_id
+WHERE 
+	f.order_id = c.Order_order_id
+GROUP BY 
+	f.order_id;

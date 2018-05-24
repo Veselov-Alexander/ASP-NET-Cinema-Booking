@@ -1,0 +1,167 @@
+﻿*
+{
+	margin: 0;
+	padding: 0;
+}
+
+.menu-bar
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 1);
+	flex-direction: row;
+	position: fixed;
+	height: 80px;
+	width: 100%;
+    z-index: 999;
+}
+
+.logo-text
+{
+	color: #000;
+	background-color: transparent;
+	font-size: 24px;
+    position: relative;
+    padding-left: 25px;
+    font-weight: 700;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+.logo-icon
+{
+	display: flex;
+	align-items: center;
+	margin: 0;
+    padding: 0;
+}
+
+.account_buttons
+{
+	background-color: #2D6CDF;
+	padding: 7px;
+	border-radius: 3px;
+}
+
+.account_buttons a
+{
+	color: white;
+}
+
+.menu-bar ul li
+{
+	display: inline;
+	margin: 15px;
+}
+
+a
+{
+	font-size: 14px;
+    padding: 30px 15px;
+    color: rgba(0, 0, 0, 0.9);
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	color: black;
+	text-decoration: none;
+}
+
+.footer-wrapper
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+	flex-direction: row;
+	background-color: black;
+	width: 80%;
+	margin: 0 auto;
+	height: 250px;
+	overflow: hidden;
+}
+
+.column
+{
+	color: white;
+	overflow-wrap: normal;
+	width: 20%;
+}
+
+.footer
+{
+	height: 150px;
+	width: 100%;
+	background-color: black;
+	color: white;
+	margin: 0 auto;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 85%;
+    line-height: 1.7;
+}
+
+.footer a
+{
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.text-center
+{
+	text-align: center;
+}
+
+.column-header
+{
+	text-align: left;
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	font-weight: bold;
+    font-size: 14px;
+   	margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.column-text
+{
+	margin-bottom: 20px;
+}
+
+.bg
+{
+	background-color: black;
+}
+
+.bg-img
+{
+	background: url("../Images/index_background.jpg");
+	margin-top: -50px;
+	height: 800px;
+	width: 100%;
+}
+
+.error-string
+{
+	line-height: 1.5;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	min-height: 17px;
+    margin: 4px 0 2px;
+    font-size: 12px;
+    color: red;
+}
+
+.wrapper
+{	
+	background-color: black;
+	width: 100%;
+	overflow: hidden;
+}
+
+.wr
+{
+    background-color: black;
+	width: 100%;
+	height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+

@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Cinema.master.cs" Inherits="Cinema.Cinema" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Cinema &mdash; Web project</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/master.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="gWR" class="wr" runat="server">
+        <form class="wrapper" runat="server">
+            <div class="menu-bar">
+                <div class="logo-icon">
+                    <img src="../../../Images/logo.png" />
+                    <a class="logo-text" href="/">CINEMA.</a>
+                </div>
+                <ul>
+                    <li><a runat="server" href="/">Home</a></li>
+                    <li><a runat="server" href="/Shows">Shows</a></li>
+                    <li><a runat="server" href="/About">About</a></li>
+                    <asp:LoginView runat="server" ID="LoginView1">
+                        <RoleGroups>
+                            <asp:RoleGroup Roles="Admin">
+                                <ContentTemplate>
+                                    <li><a runat="server" href="~/Manage">Manage</a></li>
+                                </ContentTemplate>
+                            </asp:RoleGroup>
+                        </RoleGroups>
+                    </asp:LoginView>
+                    <li></li>
+                    <li></li>
+                    <asp:LoginView runat="server" ID ="login">
+                        <AnonymousTemplate>
+                            <li class="account_buttons"><a runat="server" href="~/Account/Login">Login</a></li>
+                            <li class="account_buttons"><a runat="server" href="~/Account/Register">Register</a></li>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <li class="account_buttons"><a runat="server" href="~/Account/Profile">Profile</a></li>
+                            <li class="account_buttons"><a runat="server" href="~/Account/Logout">Logout</a></li>
+                        </LoggedInTemplate>
+                    </asp:LoginView> 
+                </ul>
+            </div>
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+        <div>
+            <asp:ContentPlaceHolder ID="footer" runat="server">    
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <div class="text-center">
+                <p>
+                    <small class="block">2018 Kharkiv National University of Radio Electronics</small>
+                    <br/>
+                    <small class="block">61166, Kharkiv, Ukraine, Nauki av. 14, 389</small>
+                    <br/><br/>
+                    <small class="block">Designed by<a href="https://github.com/veselov-alexander" target="_blank">Alexander Veselov</a></small>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+﻿.reg-form
+{	
+	width: 800px;
+}
+
+.sub-button
+{
+    cursor: pointer;
+	background-color: #2D6CDF;
+	padding: 7px;
+	width: 70px;
+	border: none;
+	color: white;
+	border-radius: 3px;
+	font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+.dec-button
+{
+    cursor: pointer;
+	background-color: gray;
+	padding: 7px;
+	width: 70px;
+	border: none;
+	color: white;
+	border-radius: 3px;
+	font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+table 
+{
+    width: 100%; 
+    border: 1px solid black;
+    border-bottom: none; 
+}
+    
+td, th 
+{
+    padding: 3px;
+}
+
+th 
+{
+    text-align: left;
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+td 
+{
+    text-align: match-parent;
+    border-bottom: 1px solid black;
+}
+
+.flex 
+{
+    width: 18.5%;
+}

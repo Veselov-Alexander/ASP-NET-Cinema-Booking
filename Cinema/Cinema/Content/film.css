@@ -1,0 +1,117 @@
+﻿#main {
+	position: relative;
+	width: 1000px;
+	margin-top: 57px;
+	margin-left: 4px;
+	float: left;
+}
+
+.face {
+	background-color: black;
+	margin: 0 3px 0 2px;
+	position: relative;
+    border-radius: 5px;
+	top: -49px;
+    padding: 10px;
+    height: 450px;
+}
+
+r-1 {
+	background-color: lightgray;
+	min-height: 20px;
+	padding: 8px 10px;
+}
+
+.r-2 {
+	min-height: 20px;
+	padding: 9px 10px;
+}
+
+.rl-1 {
+	width: 150px;
+	float: left;
+	margin-top: 2px;
+}
+
+.rl-2 {
+	color: #dadada;
+	width: 245px;
+	margin-left: 150px;
+}
+
+.rl-2 a {
+	line-height: 1.5;
+}
+
+.rll {
+	line-height: 1.6;
+	position: relative;
+	top: -3px;
+	color: #dadada;
+	min-height: 33px;
+}
+
+#prr {
+	font-size: 17px;
+	color: white;
+	margin-top: 2px;
+	margin-bottom: 7px;
+}
+
+.t-img {
+	margin: 8px 8px 8px 8px;
+	float: left;
+    width: 300px;
+}
+
+.t-row {
+	margin-top: 9px;
+	width: 600px;
+	margin-left: 221px;
+	min-height: 315px;
+}
+
+.r-1 {
+	background-color: black;
+	min-height: 20px;
+	padding: 8px 10px;
+}
+
+.rl-1 {
+    color: white;
+	width: 150px;
+	float: left;
+	margin-top: 2px;
+}
+
+.rl-2 {
+	color: white;
+	width: 600px;
+	margin-left: 150px;
+}
+
+.infotext p {
+    color: white;
+	line-height: 18px;
+}
+
+.reg-form
+{	
+	background-color: white;
+	width: 1000px;
+    height: 485px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.margin
+{
+	padding: 100px;
+}
+
+.wr 
+{
+    height: 130vh;
+}

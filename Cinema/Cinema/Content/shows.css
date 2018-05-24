@@ -1,0 +1,118 @@
+﻿body 
+{
+    background: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 100%;
+    line-height: 1em;
+    color: #858585
+}
+
+.list 
+{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.list li 
+{
+    width: 95%;
+    overflow: hidden;
+    vertical-align: top;
+    line-height: 1.714em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border: 10px solid black;
+    border-radius: 5px;
+    background-color: black;
+    margin-top: 30px;
+}
+
+.list li img 
+{
+    float: left;
+    position: relative;
+    width: 200px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.list li a:hover
+{
+    color: #d72a18
+}
+
+.tab 
+{
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+.tab button 
+{
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 24px 26px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.tab button.active 
+{
+    background-color: white;
+}
+
+.tabcontent 
+{
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.tabcontent 
+{
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect
+{
+    from 
+    {
+        opacity: 0;
+    }
+    to 
+    {
+        opacity: 1;
+    }
+}
+
+.link
+{
+    color: white;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.day 
+{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.reg-form
+{	
+	width: 1000px;
+    padding: 0;
+}
+
+.wr
+{
+	height: 160vh;
+}
